@@ -1,0 +1,207 @@
+.sky{
+
+background-image:url('images/sky.jpg');
+height:100vh;
+width:100%;
+position: relative;
+background-size: cover;
+background-position: center;
+overflow-x: hidden;
+
+}
+
+body{
+  padding:0px;
+  margin:0px;
+}
+
+.road{
+background-image: url('images/road.jpg');
+width: 1000%;
+height:200px;
+position:absolute;
+bottom: 0;
+left:0;
+right:0;
+z-index:1;
+display:block;
+animation: road 5s linear infinite;
+background-repeat: repeat-x;
+}
+
+@keyframes road
+{
+100%{
+  transform: translateX(-3400px);
+}
+}
+
+
+.city{
+background-image: url('images/city.png');
+background-repeat: repeat-x;
+width:1000%;
+height:250px;
+position: absolute;
+left:0;
+right:0;
+bottom:200px;
+z-index:1;
+display: block;
+animation: city 20s linear infinite;
+}
+
+@keyframes city {
+
+100%{
+
+  transform: translateX(-1400px);
+}
+
+}
+
+
+.car{
+position: absolute;
+left:50%;
+bottom:135px;
+transform: translateX(-50%);
+z-index:2;
+width:400px;
+}
+
+
+.car img
+{
+
+width:100%;
+animation:car 1s linear infinite;
+
+}
+
+
+@keyframes car {
+
+  100%{transform:translateY(-1px);}
+  50%{transform:translateY(1px);}
+  0%{transform:translateY(-1px);}
+
+}
+
+.wheel{
+
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  z-index:2;
+  bottom:171px;
+
+
+}
+
+
+
+
+.wheel img{
+
+  animation:wheels 1s linear infinite;
+
+
+}
+
+
+.front-wheel{
+
+left:78.79999px;
+position: absolute;
+width:52px;
+height:52px;
+
+}
+
+
+
+.back-wheel{
+
+left:-148px;
+position: absolute;
+width:55px;
+height:55px;
+bottom:-50px;
+}
+
+
+@keyframes wheels{
+  100%{transform: rotate(360deg);
+  }
+}
+.line{z-index:2;
+
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  z-index:1;
+  bottom:731px;
+}
+.lines{
+
+  left:-680.79999px;
+  position: absolute;
+height:590px;
+animation: line 1s linear infinite;
+
+}
+@keyframes line {
+
+  100%{transform:translateY(-1px);}
+  50%{transform:translateY(1px);}
+  0%{transform:translateY(-1px);}
+
+
+
+}
+
+
+
+.goes{z-index:2;
+
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  z-index:2;
+  bottom:731px;
+}
+
+
+.go{
+
+left:-490.79999px;
+position: absolute;
+height:142px;
+width:142px;
+animation: line 1s linear infinite;
+
+}
+
+
+
+.corona{
+
+  z-index:2;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  z-index:2;
+  bottom:731px;
+
+}
+
+.corona1{
+
+left:-380.79999px;
+position:absolute;
+height:142px;
+width:142px;
+animation: line 1s linear infinite;
+
+}
